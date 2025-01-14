@@ -1,0 +1,28 @@
+
+/* Efek animasi untuk elemen yang dipilih */
+.selected {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Efek pulse (getar) */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+}
+
+/* Hover effect tanpa mengubah latar belakang */
+.hover:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}

@@ -1,0 +1,5 @@
+# Blokir akses langsung ke file db.php
+<Files "db.php">
+    Order Allow,Deny
+    Deny from all
+</Files>
